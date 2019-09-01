@@ -4,7 +4,7 @@ def heapsort(arr):
     max_heap(arr, n, i)
   for i in range(n-1, 0, -1):
     arr[0], arr[i] = arr[i], arr[0]
-    max_heap(arr, n, i)  
+    max_heap(arr, i, 0)  
   return arr
   
 def max_heap(arr, n, i):
@@ -18,5 +18,5 @@ def max_heap(arr, n, i):
   if largest != i:
     arr[largest], arr[i] = arr[i], arr[largest]
     max_heap(arr, n, largest)
-arr = [1,2,3,3,65]
+arr = [1,2,3,35,65]
 print(heapsort(arr))
