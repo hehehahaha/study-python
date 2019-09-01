@@ -16,7 +16,7 @@ class Solution:
             return s[n-1]
         
         
-        
+#递归        
 let num = 0;    // 用来记录fib函数执行次数，执行一次加一
 function fib(n) {
   num ++;
