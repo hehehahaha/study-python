@@ -31,11 +31,6 @@ class Solution:
 #交换几次获得最小
 class Solution:
    def minimumSwap(self, num: int) -> int:
-      '''
-      若最高位数字不是最大，则将其余位中的最大数字与最高位交换。
-          若其余位中的最大数字不止一个，则将位数最低的那个与最高位交换。
-      若最高位数字是最大，则对除去最高位的剩余数字进行递归操作。
-      '''
       flag = 0
       s, a = str(num), []
       for val in s:
