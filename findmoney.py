@@ -7,8 +7,10 @@ def num(arr, val):
          if i-j >= 0:
             temp = min(temp, out[i-j] + 1)
       out[i] = temp 
-
-   return out[-1]
+   if out[-1] == val:
+      return -1
+   else:
+      return out[-1]
 
 a = num([186,419,83,408],6249)
 print(a)
