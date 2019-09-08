@@ -7,10 +7,8 @@ class Solution:
     def ReverseList(self, pHead):
         # write code here
         if not pHead or not pHead.next:
-            return pHead
-        
+            return pHead     
         last = None
-        
         while pHead:
             tmp = pHead.next
             pHead.next = last
