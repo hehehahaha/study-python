@@ -14,3 +14,4 @@ def knapsack(N, W):
    return B[5][20]
 a = knapsack(N, W)
 print(a)
+#a = 26
