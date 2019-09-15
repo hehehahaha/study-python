@@ -1,19 +1,11 @@
-class Solution:
-    def Fibonacci(self, n):
-        # write code here
-        if n == 0:
-            return 0
-        if n == 1:
-            return 1
-        if n == 2:
-            return 1
-        if n >= 3:
-            s = []*n
-            s.append(1)
-            s.append(1)
-            for i in xrange(2,n):
-                s.append(s[i-1]+s[i-2])
-            return s[n-1]
+def Fibonacci(n):
+  s = [] * n
+  s.append(1)
+  s.append(1)
+  for i in range(2, n):
+    s.append(s[i-1]+s[i-2])
+  return s[n-1]
+print(Fibonacci(10))
         
         
 #递归        
