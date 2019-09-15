@@ -1,15 +1,11 @@
-def bubble_sort(arr):
-     length = len(arr)
-     while length > 0:   
-          for i in range(length-1):
-               if arr[i] > a[i+1]:
-                    arr[i] = arr[i] + arr[i+1]
-                    arr[i+1] = arr[i] - arr[i+1]
-                    arr[i] = arr[i] - arr[i+1]
-          length -= 1
-
-if __name__ == "__main__":
-     a = [10, 3, -3, 6, 0, 1, 4, 5, 11, 8]
-     bubble_sort(a)
-     print(a)
-     
+def bubbleSort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubbleSort(arr)
+print ("排序后的数组:")
+for i in range(len(arr)):
+    print ("%d" %arr[i])
