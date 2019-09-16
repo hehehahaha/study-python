@@ -13,5 +13,18 @@ def Fibonacci(n):
   if n == 1:
     return 1
   return Fibonacci(n-1) + Fibonacci(n-2)
-  
+ 
+def Fibonacci(n):
+  if n == 0:
+    return 0
+  elif n == 1:F
+    return 1
+  f0, f1 = 0, 1
+  f = 0
+  for i in range(2, n+1):
+    f = f0 + f1
+    f0 = f1
+    f1 = f
+  return f
+
 print(Fibonacci(10))
