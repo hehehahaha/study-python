@@ -18,3 +18,9 @@ class Solution:
         if abs(right - left) > 1:
             return False
         return self.IsBalance_solution(pRoot.right) and self.IsBalance_solution(pRoot.left)
+    
+a = Node(5)
+a.left = Node(4)
+#a.right = Node(3)
+b = Solution()
+print(b.IsBalance_solution(a))
