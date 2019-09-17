@@ -17,7 +17,7 @@ def Fibonacci(n):
 def Fibonacci(n):
   if n == 0:
     return 0
-  elif n == 1:F
+  elif n == 1:
     return 1
   f0, f1 = 0, 1
   f = 0
